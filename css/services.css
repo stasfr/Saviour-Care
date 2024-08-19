@@ -1,0 +1,156 @@
+.services {
+  margin-top: 150px;
+}
+
+.services__container {}
+
+.services__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+.services__header {
+  text-align: center;
+}
+
+.services__header>*:not(:last-child) {
+  margin-bottom: 36px;
+}
+
+.services__title {
+  color: #462E6A;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: calc(56 / 45 * 100%);
+}
+
+.services__sub-title {
+  color: #A7A7A7;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: calc(27 / 19 * 100%);
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.services__content {
+  margin-top: 100px;
+}
+
+.services-card {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 40px;
+}
+
+.services-card__card {
+  display: flex;
+  flex-direction: column;
+  /* min-width: 335px; */
+  box-shadow: 2px 2px 20px #E5E9F6;
+  border-radius: 20px;
+  align-items: center;
+  padding: 50px;
+}
+
+.services-card__icon {
+  min-height: 100px;
+}
+
+.services-card__title {
+  color: #000000;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(56 / 24 * 100%);
+}
+
+.services-card__sub-title {
+  color: #7D7987;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: calc(28 / 16 * 100%);
+}
+
+.services__button {
+  padding: 20px 90px;
+  margin-top: 100px;
+}
+
+@media (max-width:1057px) {
+  .services-card {
+    grid-template-columns: repeat(2, auto);
+    padding: 0px 30px;
+  }
+}
+
+@media (max-width:832px) {
+  .services {
+    margin-top: 100px;
+  }
+
+  .services__title {
+    font-size: 38px;
+  }
+
+  .services__sub-title {
+    font-size: 16px;
+    padding: 0px 20px;
+  }
+
+  .services__content {
+    margin-top: 50px;
+  }
+
+  .services__button {
+    padding: 15px 70px;
+  }
+}
+
+@media (max-width:731px) {
+  .services-card {
+    grid-template-columns: repeat(1, auto);
+  }
+
+  .services-card__card {
+    margin: 0 20%;
+  }
+
+  .services__button {
+    margin-top: 70px;
+  }
+}
+
+@media (max-width:570px) {
+  .services__sub-title {
+    padding: 0px;
+  }
+
+  .services-card__card {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width:390px) {
+  .services-card__card {
+    text-align: center;
+    padding: 20px;
+    margin: 0 -10px;
+  }
+
+  .services-card__icon {
+    max-height: 75px;
+  }
+
+  .services-card__icon img {
+    max-height: 75px;
+  }
+
+  .services-card__title {
+    font-size: 22px;
+  }
+
+  .services-card__sub-title {
+    font-size: 16px;
+  }
+}

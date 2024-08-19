@@ -1,0 +1,135 @@
+.signup {
+  margin-top: 150px;
+}
+
+.signup__container {}
+
+.signup__body {
+  background: linear-gradient(#6888C8, #5A98F2);
+  color: #ffffff;
+  border-radius: 25px;
+  padding: 75px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.signup__body>*:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.signup__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(48 / 36 * 100%);
+}
+
+.signup__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 480px;
+}
+
+.signup__input {
+  color: #ffffff;
+  width: 100%;
+  background: transparent;
+  line-height: 38px;
+  font-weight: 400;
+  font-size: 24px;
+  position: relative;
+  padding: 30px 0px 10px 0px;
+  border-bottom: 1px #ffffff solid;
+}
+
+.signup__input::placeholder {
+  color: #ffffff;
+}
+
+.signup__input:focus {
+  outline: none
+}
+
+.signup__button {
+  border-radius: 55px;
+  border: 1px #ffffff solid;
+  background: none;
+  padding: 15px 80px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.signup__button:hover {
+  border: 1px #5A98F2 solid;
+  background-color: #ffffff;
+  color: #5A98F2;
+  transition: all ease 0.5s;
+}
+
+
+@media (max-width:832px) {
+  .signup {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width:731px) {
+  .signup {
+    margin-top: 50px;
+  }
+
+  .signup__form {
+    width: 100%;
+  }
+}
+
+@media (max-width:550px) {
+  .signup__body {
+    padding: 50px;
+  }
+
+  .signup__title {
+    font-size: 24px;
+  }
+
+  .signup__body>*:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .signup__input {
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 0px 0px 10px 0px;
+  }
+
+  .signup__button {
+    padding: 10px 80px;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width:380px) {
+  .signup__body {
+    padding: 30px;
+  }
+
+  .signup__title {
+    font-size: 20px;
+  }
+
+  .signup__input {
+    font-size: 18px;
+    margin-top: 5px;
+    padding: 0px 0px 5px 0px;
+  }
+
+  .signup__button {
+    padding: 10px 80px;
+    margin-top: 15px;
+  }
+}

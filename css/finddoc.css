@@ -1,0 +1,95 @@
+.finddoc {
+  margin-top: 150px;
+}
+
+.finddoc__container {}
+
+.finddoc__body {
+  display: flex;
+}
+
+.finddoc__img {
+  padding-bottom: 34%;
+  flex: 1 1 50%;
+}
+
+.finddoc__content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  flex: 1 1 50%;
+  justify-content: space-around;
+  margin-left: 100px;
+}
+
+.finddoc__header {
+  margin-bottom: 20px;
+}
+
+.finddoc__header>*:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.finddoc__title {
+  max-width: 380px;
+}
+
+.finddoc__sub-title {
+  max-width: 380px;
+}
+
+.finddoc__button {
+  padding: 15px 60px;
+}
+
+@media (max-width:832px) {
+  .finddoc {
+    margin-top: 80px;
+  }
+
+  .finddoc__button {
+    padding: 10px 55px;
+  }
+}
+
+@media (max-width:731px) {
+  .finddoc {
+    margin-top: 50px;
+  }
+
+  .finddoc__body {
+    flex-direction: column-reverse;
+  }
+
+  .finddoc__content {
+    align-items: center;
+    margin: 0 0;
+    text-align: center;
+  }
+
+  .finddoc__img {
+    width: 75%;
+    height: 75%;
+    padding-bottom: 60%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width:450px) {
+  .finddoc__img {
+    width: 85%;
+    height: 85%;
+    padding-bottom: 65%;
+    margin: 0 auto;
+  }
+
+  .finddoc__header>*:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width:334px) {
+  .finddoc__title {
+    font-size: 28px;
+  }
+}

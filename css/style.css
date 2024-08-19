@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-size: 14px;
+  font-family: Roboto;
+}
+
+/* отключение скролла страницы */
+body._lock {
+  overflow: hidden;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* SERVICE */
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+._container {
+  max-width: 1100px;
+  padding: 0px 15px;
+  margin: 0px auto;
+  box-sizing: content-box;
+}
+
+._ibg {
+  position: relative;
+}
+
+._ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* BUTTONS */
+.btn {
+  color: #458FF6;
+  font-weight: 700;
+  font-size: 18px;
+  border: #458FF6 solid 2px;
+  border-radius: 55px;
+}
+
+.btn:hover {
+  color: #ffffff;
+  border: #ffffff solid 2px;
+  background-color: #458FF6;
+  transition: all ease 0.5s;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* TXT */
+.txt_title {
+  color: #462E6A;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(48 / 36 * 100%);
+}
+
+.txt_sub-title {
+  color: #7D7987;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: calc(30 / 18 * 100%);
+}
+
+@media (max-width:832px) {
+  .txt_title {
+    font-size: 30px;
+  }
+
+  .txt_sub-title {
+    font-size: 16px;
+  }
+}
